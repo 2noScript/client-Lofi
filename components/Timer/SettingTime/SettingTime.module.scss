@@ -1,0 +1,42 @@
+.wrapper {
+  //   min-height: 200px;
+  //   position: relative;
+  background-color: aqua;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    outline: none;
+    border: none;
+  }
+  .setting-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.setting-number .title {
+  //   background-color: black;
+}
+.setting-number .setting-input {
+  background-color: black;
+  min-width: 60px;
+  max-width: 70px;
+  padding: 0 4px;
+  &::placeholder {
+    text-align: center;
+  }
+  input[type="number"] {
+    width: 100%;
+  }
+}
+.setting-number .setting-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

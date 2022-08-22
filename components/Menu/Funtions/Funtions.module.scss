@@ -1,0 +1,40 @@
+// $menuW: 400px;
+// $menuPad: 8px;
+// $optionsW: 300px;
+
+.wrapper {
+  width: 58px;
+  max-height: 460px;
+  background-color: var(--primary-white);
+  border-radius: 4px;
+  padding: 8px 0;
+  direction: rtl;
+  overflow: hidden overlay;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  &-item {
+    padding: 8px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  &-item:hover {
+    color: var(--red);
+  }
+  &-item .name {
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  &-item .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+}
