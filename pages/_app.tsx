@@ -1,8 +1,15 @@
-import "../styles/globals.scss";
-import type { AppProps } from "next/app";
-import { wrapper } from "../store";
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
-}
+import { AppPropsWithLayout } from '@/configs/app'
+import { EmptyLayout } from '@/layouts'
+import '@/styles/global.scss'
+import { SWRConfig } from 'swr'
 
-export default wrapper.withRedux(MyApp);
+export default function App({ Component, pageProps }: AppPropsWithLayout) {
+	const Layout = Component.Layout ?? EmptyLayout
+	return (
+		<SWRConfig value={{}}>
+			<Layout>
+				<Component {...pageProps} />
+			</Layout>
+		</SWRConfig>
+	)
+}
