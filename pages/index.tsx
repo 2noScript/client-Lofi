@@ -1,8 +1,10 @@
-import type { NextPage } from 'next'
-import { useState } from 'react'
-
+import Seo from '@/components/Seo'
 export interface IHomeProps {}
 
-export default function Home<NextPage>(props: IHomeProps) {
-	return <div className='text-red-500'></div>
+export default function Home(props: IHomeProps) {
+	return (
+		<>
+			<Seo title='lofi_dev'></Seo>
+		</>
+	)
 }
