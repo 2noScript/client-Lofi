@@ -1,10 +1,10 @@
-import Seo from '@/components/Seo'
+import dynamic from 'next/dynamic'
+// import { cookies } from 'next/headers'
 export interface IHomeProps {}
 
 export default function Home(props: IHomeProps) {
-	return (
-		<>
-			<Seo title='lofi_dev'></Seo>
-		</>
-	)
+	// const cookieStore = cookies()
+	// console.log(cookies().get('refreshToken'))
+	// console.log(localStorage.getItem('refreshToken'))
+	return <div>xin chao</div>
 }

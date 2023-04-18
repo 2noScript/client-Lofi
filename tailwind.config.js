@@ -7,7 +7,6 @@ module.exports = {
 
 		// Or if using `src` directory:
 		'./src/**/*.{js,ts,jsx,tsx}',
-		'./node_modules/flowbite-react/**/*.js',
 	],
 	theme: {
 		extend: {
@@ -34,6 +33,12 @@ module.exports = {
 					display: 'flex',
 					'justify-content': 'center',
 					'align-items': 'center',
+				},
+				'.abs-center': {
+					position: 'absolute',
+					top: '50%',
+					left: '50%',
+					transform: 'translate(-50%,-50%)',
 				},
 			})
 		}),
